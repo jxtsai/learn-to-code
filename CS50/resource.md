@@ -15,4 +15,4 @@
 ## Github
 
 - [CS 50](https://github.com/cs50)
-- [my repos]()
+- [my repos](https://github.com/jxtsai/learn-to-code/CS50)
