@@ -6,7 +6,7 @@ Tuesday/ Thursday morning (at office): Note/ Slide reading
 weekday afternoon (at office) : project diy
 weekday morning (at office): reading
 Weekend (at home): lecture video
-
+Daily note for learning progress, thought and reflections
 
 ## Study tools / environment
 1. Acer desktop
