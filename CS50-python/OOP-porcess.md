@@ -9,6 +9,8 @@ A simple process for program problem thinking
 2. Extract key concepts from the problem and research them(key concepts)
 3. create class hierarchy and object map for the concepts
 4. code the class and test to run them
-5. repeat and refine  
+5. repeat and refine 
+
+ 
 
 
