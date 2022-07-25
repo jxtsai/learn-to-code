@@ -9,7 +9,7 @@
 - 
 
 ## Content:  148 mins
-    C
+    C: Array
     IDEs, compilers, interfaces
     Functions, arguments, return values, variables
     main, header files, commands
@@ -25,51 +25,7 @@
 請登入 https://app.blitz.do/
 
 
-
 ## my notes
-### Date 2022-07-22
-昨日白天看完了第一週的課堂筆記並寫出二道作業題之一後，晚上就鬆懈許多。但還是勉強再看完了正堂講座影片之外的短片補充敎材(shorts，其實是主要是躍躍欲試剛取貨的 A5牛皮頁封面線圈橫條筆記本)
-本週短片共五支，其主題分別為:
-
-- data types
-- conditionals/boolean 
-- loops
-- operators
-- comments
-
-昨天看了前四支，但只有 loops/ operators 才較專心(因為 A5 筆記本在手)。睡前則是勉強地把講座影片消耗長度拉到 30 分鐘左右。依稀記得好像講了 C 語言第一支程式(印出  hello world), compilers 的觀念之類的。
-第二天大清早還賴在床上之際，半醒不醒地想著作業的進階加分題( mario 左右對稱的階梯迴圈)要怎麼解...
-
-上午雖然把進階加題的代碼寫出來了，但自己對於多重迴捲圈如何控制的關鍵觀念似乎仍未完全摸透，只能靠著把幾個變數改來改去，總算改成答案的樣子而已。不過這些弱點的曝露，正是告誡自己要好好弄懂哪些地方。
-```
-#include <cs50.h>
-#include <stdio.h>
-
-int main(void){
-    int h = get_int("Height: \n");
-    for(int i = 0; i < h; i++)
-    {
-         for(int j = 0; j < h-i ; j++) 
-        {
-            printf(" ");
-        }
-        for (int k = 0; k < i+1 ; k++)
-         {
-            printf("#");
-         }
-        printf(" ");
-        for(int j = 0; j < i+1 ; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
-    }
-
-}
-
-```
-
-
 ### Date 2022-07-25 
 週末雖依舊照表操課(主要是觀看課堂影片)，但在記錄心得筆記與習題作業練習就無法維持專注積極。
 因為覺得已讀完課堂筆記，所以課堂影片就是不專心地讓它自動播放，另外也跑完中文導讀影片。中文講師在後半部解釋 C 語言資料型態 (例如 整數佔 4 個 bits, 如何表示 負數)，自己聽得有點亂。這似乎也是當年雖然試圖以 C 語言作起手，但又很快放棄宅的原因吧。
@@ -77,6 +33,8 @@ int main(void){
 週末有大半的精力在找一套好的學習規劃 app，[My Study Life](https://www.mystudylife.com/) 同具行動與網頁版，似乎可以期待一下。
 桌機版的 VSC 完美地整合了 github (雖然 codespace 也不錯,但未開放免費，目前只是佔著 CS50 的名額使用著)。
 
+第 0 週的作業要求是利用直覺式圖示積木組合 Scratch 作練習。不知為何，自己蠻討論 GUI的程式，不管是程式本身要求作出 Graphic 效果或是 scratch 這種完全無需代碼著重思考邏輯訓練的學習方法。不過還是利用早年(五六年前)自己曾經作過的作業，重新地溫習了下 scratch 的玩法。
+  
 今日上午完成了作業題的第二道簡易版,其代碼如下:
 
 ```
@@ -149,6 +107,37 @@ int main(void){
     int coins = q + d + nk + p ;
     printf("%i \n", coins);
 }
+
+```
+
+這道題目自己是先以 python 來解，一開始的想法是寫一支 functions, 它接受二個參數，第一個參數是硬幣的幣值，第二個是輸入的零錢值
+此函數則會返回硬幣數量與扣除後剩下的餘數(tuple形態)
+這個算法和上述在解題指引中，建議分別先寫出四種硬幣最大能返還的量目
+然後再透過餘數作為不同幣值數量計算函數的參數, 應是相同的意思
+
+```
+def get_change(m, cents):
+    coins = (int(cents/m))
+    remain = cents % m 
+    return coins, remain
+    
+try: 
+    while (t = True):
+        cents = int(input("Owned by customer: "))
+
+except:
+    print("Not string for input")
+    
+
+myquarter = get_change(25, cents)
+mydime = get_change(10, myquarter[1])
+mynickel = get_change(5,  mydime[1])
+
+
+total_coin = myquarter[0] + mydime[0] + mynickel[0] + mynickel[1]
+
+print(total_coin)
+
 
 ```
 
