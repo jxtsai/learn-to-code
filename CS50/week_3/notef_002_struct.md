@@ -10,10 +10,6 @@
 
 ## Content:  137 mins
 ### Algorithm
-- Searching
--- Big O
--- Linear search, binary search
--- Searching with code
 
 - Structs Sorting
 -- Selection sort demonstration

@@ -1,0 +1,42 @@
+#CS50 week_3
+- Date : July 30th ~ August 12th
+- https://cs50.harvard.edu/x/2022/weeks/3/
+- 中文導讀
+
+## 本週目標
+- C 語言
+- 演算法
+- 
+
+## Content:  137 mins
+### Algorithm
+
+
+
+## 完成進度
+請登入 https://ticktick.com
+
+## my notes
+### Date 2022-08-04
+
+今天作 lab3 作業，查覺自己其實對於 selection sort, bubble sort 的 O (O,Ω,θ 的觀念) 要放入的 n ，其觀念仍然似懂非懂，今天晚上應該再把這部份的影片重溫一下。
+
+
+## project
+### Date 2022-08-04
+既然姑且把 pluraity 習題作出來(雖然還需要再依作業提示重寫，但想先來作 runoff, 而不是一直繞在第一道。
+延續昨天對於 problem set 第二題 runoff 之思考，其與 plurality 主要的差別在
+1. 每張選票上呈現的是選民對於 n位候選人偏好的排名，而非只有一個名字
+原本此處的選票只是用 votes[voters] array, 但在 runoff 的選票有 ranking 1~3, 故其 ballot 或需採 datatype struct ?
+先試著寫出 ballot 的資料型態, 應該為只有一個 rank(array)之型態 
+ballot size 則為由 user 輸入的" voters
+    int voters = get_int("How many number of votes? \n");
+
+雖然把 選票的資料形態與收集 user 的投票記錄給寫出來了
+但感覺要這樣的寫法來計算選票,會把 main 寫得亂七八糟,尤其是不只到把 recursion 放在何處
+
+2. 得票最多者，其票數要超過 50%，否則就要進入第二輸投票。而前一輪中得票最少者無法參加 第二輪。若第二輪仍無人取得 50％，則如前一輪再淘汰一名進入第三輪直到有人取得 50％之選票。
+3. 關鍵點：選票的 data struct (data type) 如何設計？選票計算過程如何運用 recursion?
+   base case : 
+   recursion case
+

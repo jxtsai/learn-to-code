@@ -15,14 +15,6 @@
 -- Linear search, binary search
 -- Searching with code
 
-- Structs Sorting
--- Selection sort demonstration
--- Bubble sort demonstration
--- Selection sort
--- Bubble sort
-
-- Recursion
-- Merge sort
 
 
 ## 完成進度

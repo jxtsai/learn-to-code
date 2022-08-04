@@ -10,16 +10,7 @@
 
 ## Content:  137 mins
 ### Algorithm
-- Searching
--- Big O
--- Linear search, binary search
--- Searching with code
 
-- Structs Sorting
--- Selection sort demonstration
--- Bubble sort demonstration
--- Selection sort
--- Bubble sort
 
 - Recursion
 - Merge sort
@@ -40,8 +31,6 @@
 3. 如何計算候選人的得票數，並找出其中最高票者:似乎要用到二次內迴圈，若只先計算某一候選人，則是一次 lopp（或可以一支小函數來計算個各得票數）
 
 
-
-
 ## project
 ### Date 2022-08-03
 #### problem set 第二題 runoff 
@@ -50,39 +39,4 @@
 2. 得票最多者，其票數要超過 50%，否則就要進入第二輸投票。而前一輪中得票最少者無法參加 第二輪。若第二輪仍無人取得 50％，則如前一輪再淘汰一名進入第三輪直到有人取得 50％之選票。
 3. 關鍵點：選票的 data struct (data type) 如何設計？選票計算過程如何運用 recursion?
  
-```
-#include <cs50.h>
-#include <stdio.h>
-
-int colla(int n);
-
-int main(void)
-{
-    int n = get_int("number: \n");
-    int result = colla(n);
-    printf("%i \n", result);
-    return 0;
-}
-
-int count = 0;
-int colla(int n)
-{
-   if (n==1)
-   {
-      return count;
-   }
-   else if (n%2==0)
-   {
-      count = count + 1;
-      n = n/2;
-   }
-   else
-   {
-      count++;
-      n =3*n+1;
-   }
-   return colla(n);
-}
-
-```
 
