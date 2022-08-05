@@ -21,6 +21,10 @@
 
 今天作 lab3 作業，查覺自己其實對於 selection sort, bubble sort 的 O (O,Ω,θ 的觀念) 要放入的 n ，其觀念仍然似懂非懂，今天晚上應該再把這部份的影片重溫一下。
 
+### Date 2022-08-05
+回家重看了 week3 四支介紹 search / sort 的短片，才發現其中藏著許多過去自己未曾注意到的細節。例如 search 在找到符合條件的第一個元素程式就會停止，不會再繼續檢查後面的資料，而排序則是會從頭到尾地檢查過(即使該物件集合已是排序好)確認已正確依序。
+因此 selection sort / bubble sort 所花費的時間是差不多 (Big O(n二次方); Ω(n))，但bubble sort 若遇上倒序資料則會比 selection 花更多時間。至於這三種最佳最快的 merge sort (Big O(n x log n); Ω(log n))
+
 
 ## project
 ### Date 2022-08-04
