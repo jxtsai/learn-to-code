@@ -1,4 +1,4 @@
-#CS50 week_1
+#CS50 week_2
 - Date : July 26th ~ 31th
 - https://cs50.harvard.edu/x/2022/weeks/2/
 - 中文導讀
