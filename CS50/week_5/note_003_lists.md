@@ -5,7 +5,7 @@
 
 ## 本週目標
 - pointers
-- 
+- data structure in C
 
 ## Content:  132 mins
 ### Data Structures
