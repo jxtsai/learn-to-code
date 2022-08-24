@@ -18,5 +18,5 @@
 ## my notes
 ### Date 2022-08-23
 
-重新深入認識 array 陣列 from 
+重新深入認識 array 陣列 from 《programming in C 4th edition》
 
