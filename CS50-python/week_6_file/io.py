@@ -7,3 +7,6 @@ with open("student.csv", "r") as file:
         row = line.rstrip().split(",")
         print(f"{row[0]} is in house of {row[1]}.")
         
+        
+        
+        
