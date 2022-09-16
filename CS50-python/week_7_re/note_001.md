@@ -56,7 +56,7 @@ print(f"hello, {name}")
 ## supplement reading 
 
 1. python documentation about re: https://docs.python.org/3/library/re.html
-2. Tutorial video : [Learn and Understand Regular Expressions(Regex)](https://www.udemy.com/course/learn-and-understand-regular-expression-with-examples/)
-
+2. Tutorial video : [Complete Regular Expressions Bootcamp - Go from Zero to Hero](https://www.udemy.com/course/learn-regular-expressions-in-online-regex-course/)
+ 
 
 
