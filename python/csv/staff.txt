@@ -1,0 +1,4 @@
+name, department, address, join date 
+David, Sales, 1432 T count Kood Road, 2012-10-14
+Fred, Accounting, 381 Floww Ave. FD City, 2023-01-01
+Vicnet, General Affairs, 12 4Floor Daidw St, 2020-04-12
