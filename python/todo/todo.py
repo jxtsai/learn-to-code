@@ -11,19 +11,22 @@ todo items = list data structure?
 """
 import sys
 
-   
-with open("list.txt", "a") as file:
-    if sys.argv[1] == "add":
-        file.write(sys.argv[2]+"\n")
-    if sys.argv[2] == "remove":
-        todo_list = file.readlines()
-          
+
+someth = input("Remeber to do: ")
+todo_list = []
+
+with open("list.txt", "w") as file:
+    file.write(someth)
+
+with open("list.txt", "r") as file:
+    content = file.read()
+    print("My Todo list: ")
+    print(content)
 
 
-with open("list.txt") as file:
-    todo_list = file.readlines()    
-    for i, d in enumerate(todo_list):
-        print((i+1), d.rstrip())
+
+for arguement in sys.argv:
+    print(arguement)
 
 
     
