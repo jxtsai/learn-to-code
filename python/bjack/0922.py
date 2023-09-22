@@ -93,15 +93,15 @@ def game():
     
     print(f" Your cards: {playerhand}, for {caculate(playerhand)}") 
     print(f" Dealer : {dealerhand[0]}.")
-    play = input("Hit ('h') to add card or Stand ('s')? " ) 
+    play = input("Hit ('h') to add card,  Stand ('s') or Quit ('q')" ) 
+     
     if play == 's':
         while caculate(dealerhand) < 17:
             dealCard(dealerhand)
     elif play == 'h':
-        dealCard(playerhand)
-        if caculate(playerhand) < 17:
-            play = input("Hit ('h') to add card or Stand ('s')? " ) 
-            
+            dealCard(playerhand)
+            if caculate(playerhand) < 17:
+                play = input("Hit ('h') to add card or Stand ('s')? " )   
         
     print(f" Your cards: {playerhand}, for {caculate(playerhand)}")     
     print(f" Dealer : {dealerhand}.") 
