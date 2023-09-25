@@ -12,14 +12,14 @@ def alpha_sym(array):
     res = []
     for word in array:
         c = 0
-        for l in word.lower():
-            if word.lower().find(l) == letters.index(l) :
+        for i in range(len(word)):
+            if word[i].lower() == letters[i] :
                 c = c + 1
         res.append(c)
     return res    
 
 
-test = alpha_sym(["a","AxyD"])
+test = alpha_sym(["a","AxyD", "abdbea"])
 print(test)
 
 
