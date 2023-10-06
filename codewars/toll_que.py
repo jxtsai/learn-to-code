@@ -25,6 +25,14 @@ array of customer : 不會改動排隊次序
    array_2  = [1, n+2, ...]
    array_n = [n, n+n, ...]
        
+best solution by others
+
+def queue_time(customers, n):
+    l=[0]*n
+    for i in customers:
+        l[l.index(min(l))]+=i
+    return max(l)
+    
     
 '''
 
