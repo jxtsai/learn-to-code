@@ -15,28 +15,16 @@ def palindrome(s):
     '''
     
     '''
-    l = len(s)
-    half = l // 2
-    c = 0
-    if l % 2 == 0: # even
-        for i in range(half):
-            if s[i] == s[0-l+i]:
-                c = c + 2
-            else:
-                c = c
-    else:
-        for i in range(half):
-            if s[i] == s[0-l+i]:
-                c = c + 2
-            else:
-                c = c
-    return c
-
+    pass
+     
+   
 def longest_palindrome (s):
 
     # Your code goes in here
     #
+    for i in s:
+        
     pass
     
-test = palindrome("abba") 
+test = palindrome("zzbaabcd") 
 print(test)

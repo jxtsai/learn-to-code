@@ -22,11 +22,11 @@ In the example above gap(2, 3, 50) will return [3, 5] or (3, 5) or {3, 5} which 
 '''
 
 def prime_number(n):
-    for i in range(2, n):
+    root_n = int(n**0.5)+1 # 只需檢查小於該數字開根號, 加快計算速度
+    for i in range(2, root_n):
         if n % i == 0:
             return False
-    return True        
-            
+    return True  
 
 def prime_list(m, n):
     '''
